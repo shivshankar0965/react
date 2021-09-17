@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+:root {
+  --color-bg-nav: #dce4c0;
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  line-height: 1.5;
+}
+
+#nav-bar {
+  top: 0;
+  height: 100vh;
+  border-right: 3px solid rgb(135, 143, 140);
+  background-color: var(--color-bg-nav);
+  position: sticky;
+  overflow: auto;
+}
+.main-section {
+  transition: all 0.2s;
+}
+nav {
+  width: 30vw;
+}
+#main-docs {
+  transition: all 0.5s;
+  width: 70vw;
+
+  background-color: rgb(217, 231, 216);
+}
+#logo > span {
+  color: rgb(238, 107, 0);
+  font-family: "Abril Fatface", cursive;
+  font-size: 45px;
+  text-shadow: 2px 3px 5px #061606;
+}
+#logo {
+  color: #34aa3e;
+  background-color: #cddacd;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000000;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#nav-bar ul {
+  list-style-type: none;
+}
+#nav-bar li {
+  font-size: 18px;
+  background-color: rgb(186, 226, 195);
+  border-top: 2px solid black;
+}
+#nav-bar li a:hover {
+  background-color: #46a839;
+  transition: 0.2s;
+  color: white;
+}
+#nav-bar li a {
+  text-decoration: none;
+  display: block;
+  color: rgb(7, 22, 1);
+  padding: 0.8rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+header {
+  font-size: 25px;
+  margin: 1.2rem 0.9rem;
+  padding: 1rem;
+  background-color: rgb(219, 218, 217);
+  border-left: 6px solid #d67f2e;
+  box-shadow: 2px 2px 9px #0e3114;
+  border-radius: 0.34rem;
+}
+article {
+  background-color: #cedbce;
+  margin: 1.2rem 0.9rem;
+  padding: 1rem;
+  border-radius: 0.34rem;
+}
+code {
+  font-size: 12px;
+
+  font-family: "Source Code Pro";
+}
+.example p {
+  font-size: 16px;
+}
+.example {
+margin: 1.5rem 0;
+}
+#history {
+    padding: 0 0 0 2rem;
+}
+#reference ul{
+    list-style-type:disc;
+    font-size: 18px;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
+#reference ul a{
+    text-decoration: none;
+    color: rgb(230, 132, 34);
+    font-weight: bold;
+}
+#es6-features{
+    margin-left: 2.5rem;
+}
+@media (max-width: 750px) {
+  .container {
+    width: auto;
+    display: inherit;
+  }
+  #nav-bar {
+    width: 100%;
+    text-align: center;
+    margin: inherit;
+    overflow: auto;
+    height: 40vh;
+  }
+  #main-docs {
+    width: 100%;
+  }
+}
