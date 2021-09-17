@@ -99,42 +99,43 @@
                 Start by including three scripts, the first two let us write React code in our JavaScripts, and the third, Babel, allows us to write JSX syntax and ES6 in older browsers.
               </p>
               <h4 class="example">Example</h4>
-              <pre>
-              <code>
-                    class Hello extends React.Component {
-                        render() {
-                          return Hello World!
-                        }
-                      }
-                
-                      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
-              </code>
-                </pre>
+<pre>
+<code>
+      class Hello extends React.Component {
+          render() {
+            return Hello World!
+          }
+        }
+  
+        ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+</code>
+  </pre>
                 <p>This way of using React can be OK for testing purposes, but for production you will need to set up a React environment.</p>
                 <p>If you have NPM and Node.js installed, you can create a React application by first installing the create-react-app.</p>
                 <p>Install create-react-app by running this command in your terminal:</p>
-                <pre>
-                <code>
-                    C:\Users\Your Name>npm install -g create-react-app
-                </code></pre>
+<pre>
+<code>
+    C:\Users\Your Name>npm 
+    install -g create-react-app
+</code></pre>
                 <p>hen you are able to create a React application, let's create one called myfirstreact.
 
                     Run this command to create a React application named myfirstreact:</p>
-                    <pre>
-                        <code>
-                            C:\Users\Your Name>npx 
-                            create-react-app myfirstreact
-                        </code>
-                    </pre>
+  <pre>
+      <code>
+          C:\Users\Your Name>npx 
+          create-react-app myfirstreact
+      </code>
+  </pre>
                     <p>The create-react-app will set up everything you need to run a React application.</p>
                     <p>
                         Now you are ready to run your first real React application! Run this command to move to the myfirstreact directory:
                     </p>
-                    <pre>
-                        <code>
-                            C:\Users\Your Name\myfirstreact>npm start
-                        </code>
-                    </pre>
+   <pre>
+       <code>
+           C:\Users\Your Name\myfirstrstart
+       </code>
+   </pre>
                     <p>A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.</p>
           </article>
       </section>
@@ -471,7 +472,31 @@ The constructor function is also where you honor the inheritance of the parent c
             <p>If you have a variable to send, and not a string as in the example above, you just put the variable name inside curly brackets:</p>
             <div class="example">
               <h4>Example</h4>
-              <p>Create a variable named "carname" and send it to the Car component</p><pre>  <code>        lass Car extends React.Component {        ender() {        eturn &lth2>I am a {thibrah2>;                                   class Garage extends React.Component {         render() {         const carname = "Ford";         return (           &ltdiv>           &lth1>Who lives in my garage?&lt/h1>           &ltCar brand={carname} />           &lt/div>         );&lt                     tDOM.render(&ltGarage />, dolementById('r;  </code></pre>
+              <p>Create a variable named "carname" and send it to the Car component</p>
+  <pre>  
+    <code>        
+      class Car extends React.Component {
+        render() {
+          return &lth2>I am a {this.props.brand}!&lt/h2>;
+        }
+      }
+      
+      class Garage extends React.Component {
+        render() {
+          const carname = "Ford";
+          return (
+            &lt&ltdiv>
+              &lth1>Who lives in my garage?&lt/h1>
+              &ltCar brand={carname} />
+              &lt/div>
+          );
+        }
+      }
+      
+      ReactDOM.render(&ltGarage />,
+       document.getElementById('root'));
+    </code>
+  </pre>
             </div>
             <p>If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.</p>
             <div class="example">
