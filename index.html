@@ -153,30 +153,30 @@
               <p>A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.</p>
               <div class="example">
                   <h4>Example:</h4>
-                  <pre>
-                      <code>
-                        class Car {
-                            constructor(name) {
-                              this.brand = name;
-                            }
-                          }
-                      </code>
-                  </pre>
+      <pre>
+          <code>
+            class Car {
+                constructor(name) {
+                  this.brand = name;
+                }
+              }
+          </code>
+      </pre>
                 </div>
                 <p>Now you can create objects using the Car class:</p>
                 <div class="example">
                     <h4>Example</h4>
-                    <pre>
-                        <code>
-                            class Car {
-                            constructor(name) {
-                            this.brand = name;
-                            }
-                            }
-                              
-                            mycar = new Car("Ford"); 
-                        </code>
-                    </pre>
+        <pre>
+            <code>
+                class Car {
+                constructor(name) {
+                this.brand = name;
+                }
+                }
+                  
+                mycar = new Car("Ford"); 
+            </code>
+        </pre>
                 </div>
               
           </article>
@@ -196,17 +196,18 @@
                     <p>Display a paragraph inside the "root" element:</p>
                     <pre>
                         <code>
-     ReactDOM.render(&ltp&gtHellolt/p&gt, documentgetElementById('root'));
+     ReactDOM.render(&ltp&gtHellolt/p&gt,
+      documentgetElementById('root'));
                         </code>
                     </pre>
                     <p>The result is displayed in the div having id as root element:</p>
-                    <pre>
-                      <code>
-                        &ltbody&gt
-                        &ltdiv id="root" &gt&lt/div&gt
-                        &lt/body&gt
-                      </code>
-                    </pre>
+      <pre>
+        <code>
+          &ltbody&gt
+          &ltdiv id="root" &gt&lt/div&gt
+          &lt/body&gt
+        </code>
+      </pre>
                 </div>
                 <p>
                     The HTML code in this tutorial uses JSX which allows you to write HTML tags inside the JavaScript code:
@@ -214,23 +215,23 @@
                 <div class="example">
                     <h4>Example</h4>
                     <p>Create a variable that contains HTML code and dispaly it in the root node:</p>
-                    <pre>
-                        <code>
-                            const myelement = (
-                            &lttable&lgt
-                                &lttr&gt
-                                &ltth>Name&lt/th&gt
-                                &lt/tr&gt
-                                &lttr&gt
-                                &lttd>John&lt/td&gt
-                                &lt/tr&gt
-                                &lttr&gt
-                                &lttd>Elsa&lt/td&gt
-                                &lt/tr&gt
-                                &lt/table&gt
-                            );
-
-ReactDOM.render(myelement, document.getElementById('root'));
+      <pre>
+          <code>
+              const myelement = (
+              &lttable&lgt
+                  &lttr&gt
+                  &ltth>Name&lt/th&gt
+                  &lt/tr&gt
+                  &lttr&gt
+                  &lttd>John&lt/td&gt
+                  &lt/tr&gt
+                  &lttr&gt
+                  &lttd>Elsa&lt/td&gt
+                  &lt/tr&gt
+                  &lt/table&gt
+      
+ReactDOM.render(myelement,
+ document.getElementById('root'));
                         </code>
                     </pre>
                 </div>
@@ -260,7 +261,8 @@ ReactDOM.render(myelement, document.getElementById('root'));
           <p>JSX:</p>
         <pre>
           <code>const myelement = &lth1>I Love JSX!</h1>;
-ReactDOM.render(myelement, dogetElementById('root'));
+ReactDOM.render(myelement, 
+dogetElementById('root'));
           </code>
         </pre>
         </div>
@@ -269,7 +271,8 @@ ReactDOM.render(myelement, dogetElementById('root'));
           <p>Without JSX:</p>
         <pre>
           <code>
-  const myelement = React.createElement('h1', ,do not use JSX!');
+  const myelement = React.createElement('h1',
+   ,do not use JSX!');
 
           ReactDOM.render(myelement, 
           documengetElementById('root'));
@@ -282,11 +285,12 @@ ReactDOM.render(myelement, dogetElementById('root'));
           <div class="example">
             <h4>Example</h4> 
             <p>Exedute the expression 5 + 5 :</p>
-            <pre>
-              <code>
-                const myelement = h1>React is {5 + 5} times better with JSX</h1>;
-              </code>
-            </pre>
+ <pre>
+   <code>
+     const myelement = h1>React 
+      is {5 + 5} times better with JSX</h1>;
+   </code>
+ </pre>
           </div>
           <p>To write HTML on multiple lines, put the HTML inside parentheses:</p>
           <div class="example">
@@ -295,12 +299,12 @@ ReactDOM.render(myelement, dogetElementById('root'));
             <pre>
               <code>
                 const myelement = (
-                              &ltul>
-                                &ltli>Apples</li>
-                                &ltli>Bananas</li>
-                                &ltli>Cherries</li>
-                              &lt/ul>
-                          );
+                &ltul>
+                  &ltli>Apples</li>
+                  &ltli>Bananas</li>
+                  &ltli>Cherries</li>
+                &lt/ul>
+            );
               </code>
             </pre>
           </div>
@@ -321,15 +325,15 @@ ReactDOM.render(myelement, dogetElementById('root'));
               <div class="example">
                <h4>Example</h4>
                <p>Create a Classs component called Car</p>
-               <pre>
-                 <code>
-                  class Car extends React.Component {
-                    render() {
-                      return &lth2>Hi, I am a Car!&lt/h2>;
-                    }
-                  }
-                 </code>
-               </pre>
+    <pre>
+      <code>
+       class Car extends React.Component {
+         render() {
+           return &lth2>Hi, I am a Car!&lt/h2>;
+         }
+       }
+      </code>
+    </pre>
               </div>
               <p>Now your React application has a component called Car, which returns a &lth2> element.
 
@@ -337,11 +341,12 @@ ReactDOM.render(myelement, dogetElementById('root'));
                 <div class="example">
                   <h4>Example</h4>
                   <p>Display the Car component in the "root" element :</p>
-                  <pre>
-                    <code>
-                      ReactDOM.render(&ltCar />, document.getElementById('root'));
-                    </code>
-                  </pre>
+    <pre>
+      <code>
+        ReactDOM.render(&ltCar />, 
+        dogetElementById('root'));
+      </code>
+    </pre>
                 </div>
                 <p>Here is the same example as above, but created using a Function component instead.
 
@@ -349,13 +354,13 @@ ReactDOM.render(myelement, dogetElementById('root'));
                   <div class="example">
                     <h4>Example</h4>
                     <p>Create a Fuction component called Car</p>
-                    <pre>
-                      <code>
-                        function Car() {
-                          return &lth2>Hi, I am also a Car!&ltdot;/h2>;
-                        }
-                      </code>
-                    </pre>
+        <pre>
+          <code>
+            function Car() {
+              return &lth2>Hi, I am also altdot;/h2>;
+            }
+          </code>
+        </pre>
                   </div>
                   <p>Once again your React application has a Car component.
 
@@ -363,11 +368,12 @@ ReactDOM.render(myelement, dogetElementById('root'));
                     <div class="example">
                       <h4>Example</h4>
                       <p>Display the Car component in the "root" element:</p>
-                      <pre>
-                        <code>
-                          ReactDOM.render(&ltCar />, document.getElementById('root'));
-                        </code>
-                      </pre>
+       <pre>
+         <code>
+           ReactDOM.render(&ltCar />,
+            dgetElementById('root'));
+         </code>
+       </pre>
                     </div>
                     <p>
                       If there is a constructor() function in your component, this function will be called when the component gets initiated.
@@ -383,19 +389,19 @@ The constructor function is also where you honor the inheritance of the parent c
                     <div class="example">
                       <h4>Example</h4>
                       <p>Create a counstructio function in the Car component, and add a color property: </p>
-                      <pre>
-                        <code>
-                          class Car extends React.Component {
-                            constructor() {
-                              super();
-                              this.state = {color: "red"};
-                            }
-                            render() {
-                              return &lth2>I am a Car!&lt/h2>;
-                            }
-                          }
-                        </code>
-                      </pre>
+     <pre>
+       <code>
+         class Car extends React.Component {
+           constructor() {
+             super();
+             this.state = {color: "red"};
+           }
+           render() {
+             return &lth2>I am a Car!&lt/h2>;
+           }
+         }
+       </code>
+     </pre>
                     </div>
         </article>
       </section>
@@ -413,24 +419,24 @@ The constructor function is also where you honor the inheritance of the parent c
               <div class="example">
                 <h4>Example</h4>
                 <p>Add a "brand" attribute to the Car element</p>
-                <pre>
-                  <code>
-                    const myelement = &ltCar brand="Ford" />;
-                  </code>
-                </pre>
+  <pre>
+    <code>
+      const myelement = &ltCar brand="Ford" />;
+    </code>
+  </pre>
               </div>
               <p>The component receives the argument as a props object:</p>
               <div class="example">
                 <h4>Example</h4>
-              <pre>
-                <code>
-                  class Car extends React.Component {
-                    render() {
-                      return &lth2>I am a {this.props.brand}!&lt/h2>;
-                    }
-                  }
-                </code>
-              </pre>
+<pre>
+  <code>
+    class Car extends React.Component {
+      render() {
+        return &lth2>I am a {this.props.blt/h2>;
+      }
+    }
+  </code>
+</pre>
             </div>
             <p>Props are also how you pass data from one component to another, as parameters.</p>
             <div class="example">
@@ -465,49 +471,27 @@ The constructor function is also where you honor the inheritance of the parent c
             <p>If you have a variable to send, and not a string as in the example above, you just put the variable name inside curly brackets:</p>
             <div class="example">
               <h4>Example</h4>
-              <p>Create a variable named "carname" and send it to the Car component</p>
-              <pre>
-                <code>
-  class Car extends React.Component {
-  render() {
-  return &lth2>I am a {thibrah2>;
-    
-    
-  
-    class Garage extends React.Component {
-    render() {
-    const carname = "Ford";
-    return (
-      &ltdiv>
-      &lth1>Who lives in my garage?&lt/h1>
-      &ltCar brand={carname} />
-      &lt/div>
-    );&lt                    }
-    
-  
-    tDOM.render(&ltGarage />, dolementById('root'));
-                </code>
-              </pre>
+              <p>Create a variable named "carname" and send it to the Car component</p><pre>  <code>        lass Car extends React.Component {        ender() {        eturn &lth2>I am a {thibrah2>;                                   class Garage extends React.Component {         render() {         const carname = "Ford";         return (           &ltdiv>           &lth1>Who lives in my garage?&lt/h1>           &ltCar brand={carname} />           &lt/div>         );&lt                     tDOM.render(&ltGarage />, dolementById('r;  </code></pre>
             </div>
             <p>If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.</p>
             <div class="example">
               <h4>Example</h4>
-              <pre>
-                <code>
-                  class Car extends React.Component {
-                    constructor(props) {
-                      super(props);
-                    }
-                    render() {
-                      return &lth2>I am a {this.props.model}!&lth2>;
-                    }
-                  }
-                  
-                  ReactDOM.render(&ltCar model="Mustang"/>, 
-                  
-                  document.getElementById('root'));
-                </code>
-              </pre>
+<pre>
+  <code>
+    class Car extends React.Component {
+      constructor(props) {
+        super(props);
+      }
+      render() {
+        return &lth2>I am a {this.props.mlth2>;
+      }
+    }
+    
+    ReactDOM.render(&ltCar model="Mustang"/>, 
+    
+    document.getElementById('root'));
+  </code>
+</pre>
             </div>
         </article>
 
@@ -524,82 +508,82 @@ The constructor function is also where you honor the inheritance of the parent c
             <div class="example">
               <h4>Example</h4>
               <p>Specify the state object in the constructor method:</p>
-              <pre>
-                <code>
-                  class Car extends React.Component {
-                    constructor(props) {
-                      super(props);
-                      this.state = {brand: "Ford"};
-                    }
-                    render() {
-                      return (
-                        &ltdiv>
-                        &lh1>My Car &l/h1>
-                        &l/div>
-                      );
-                    }
-                  }
-                </code>
-              </pre>
+    <pre>
+      <code>
+        class Car extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {brand: "Ford"};
+          }
+          render() {
+            return (
+              &ltdiv>
+              &lh1>My Car &l/h1>
+              &l/div>
+            );
+          }
+        }
+      </code>
+    </pre>
             </div>
             <p>The <span>state</span> object can contain as many properties as you like:</p>
             <div class="example">
               <h4>Example</h4>
               <p>Specity all the properties your component need:</p>
-              <pre>
-                <code>
-                  class Car extends React.Component {
-                    constructor(props) {
-                      super(props);
-                      this.state = {
-                        brand: "Ford",
-                        model: "Mustang",
-                        color: "red",
-                        year: 1964
-                      };
-                    }
-                    render() {
-                      return (
-                        &ltdiv>
-                        &lth1>My Car&lt/h1>
-                        &lt/div>
-                      );
-                    }
-                  }
-                </code>
-              </pre>
+  <pre>
+    <code>
+      class Car extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            brand: "Ford",
+            model: "Mustang",
+            color: "red",
+            year: 1964
+          };
+        }
+        render() {
+          return (
+            &ltdiv>
+            &lth1>My Car&lt/h1>
+            &lt/div>
+          );
+        }
+      }
+    </code>
+  </pre>
             </div>
             <p>Refer to the <span>state</span> object anywhere in the component by using the this.state.propertyname syntax:</p>
             <div class="example">
               <h4>Example</h4>
               <p>Refer to the state object in the render() method</p>
-              <pre>
-                <code>
-                  class Car extends React.Component {
-                    constructor(props) {
-                      super(props);
-                      this.state = {
-                        brand: "Ford",
-                        model: "Mustang",
-                        color: "red",
-                        year: 1964
-                      };
-                    }
-                    render() {
-                      return (
-                        &ltdiv>
-                        &lth1>My {this.state.brand}&lt/h1>
-                        &ltp>
-                            It is a {this.state.color}
-                            {this.state.model}
-                            from {this.state.year}.
-                            &lt/p>
-                            &lt/div>
-                      );
-                    }
-                  }
-                </code>
-              </pre>
+<pre>
+  <code>
+    class Car extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          brand: "Ford",
+          model: "Mustang",
+          color: "red",
+          year: 1964
+        };
+      }
+      render() {
+        return (
+          &ltdiv>
+          &lth1>My {this.state.brand}&lt/h1>
+          &ltp>
+              It is a {this.state.color}
+              {this.state.model}
+              from {this.state.year}.
+              &lt/p>
+              &lt/div>
+        );
+      }
+    }
+  </code>
+</pre>
             </div>
             <p>To change a value in the state object, use the this.setState() method.
 
@@ -607,40 +591,40 @@ The constructor function is also where you honor the inheritance of the parent c
               <div class="example">
                 <h4>Example:</h4>
                 <p>Add a button with an onClick event that will change the color property:</p>
-                <pre>
-                  <code>
-                    class Car extends React.Component {
-                      constructor(props) {
-                        super(props);
-                        this.state = {
-                          brand: "Ford",
-                          model: "Mustang",
-                          color: "red",
-                          year: 1964
-                        };
-                      }
-                      changeColor = () => {
-                        this.setState({color: "blue"});
-                      }
-                      render() {
-                        return (
-                          &ltdiv>
-                          &lth1>My {this.state.brand}&lt/h1>
-                          &ltp>
-                              It is a {this.state.color}
-                              {this.state.model}
-                              from {this.state.year}.
-                              &lt/p>
-                              &ltbutton
-                              type="button"
-                              onClick={this.changeColor}
-                            >Change color&lt/button>
-                            &lt/div>
-                        );
-                      }
-                    }
-                  </code>
-                </pre>
+<pre>
+  <code>
+    class Car extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          brand: "Ford",
+          model: "Mustang",
+          color: "red",
+          year: 1964
+        };
+      }
+      changeColor = () => {
+        this.setState({color: "blue"});
+      }
+      render() {
+        return (
+          &ltdiv>
+          &lth1>My {this.state.brand}&lt/h1>
+          &ltp>
+              It is a {this.state.color}
+              {this.state.model}
+              from {this.state.year}.
+              &lt/p>
+              &ltbutton
+              type="button"
+              onClick={this.changeColor}
+            >Change color&lt/button>
+            &lt/div>
+        );
+      }
+    }
+  </code>
+</pre>
               </div>
         </article>
 
@@ -666,24 +650,25 @@ The constructor function is also where you honor the inheritance of the parent c
               <div class="example">
                 <h4>Example:</h4>
                 <p>The constructor method is called, by React, every time you make a component:</p>
-                <pre>
-                  <code>
-                    class Header extends React.Component {
-                      constructor(props) {
-                        super(props);
-                        this.state = {favoritecolor: "red"};
-                      }
-                      render() {
-                        return (
-                         &lth1>My Favorite Color is {this.state.favoritecolor} &lt/h1>
-                        );
-                      }
-                    }
-                    
-                    ReactDOM.render( &ltHeader />,
-                     document.getElementById('root'));
-                  </code>
-                </pre>
+<pre>
+  <code>
+    class Header extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {favoritecolor: "red"};
+      }
+      render() {
+        return (
+         &lth1>My Favorite Color 
+         is {this.state.favoritecolor} &lt/h1>
+        );
+      }
+    }
+    
+    ReactDOM.render( &ltHeader />,
+     document.getElementById('root'));
+  </code>
+</pre>
               </div>
               <p>The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
 
@@ -695,49 +680,52 @@ The constructor function is also where you honor the inheritance of the parent c
                 <div class="example">
                   <h4>Example:</h4>
                   <p>The getDeriverStateFromProps method is called right before the render method:</p>
-                  <pre>
-                    <code>
-                      class Header extends React.Component {
-                        constructor(props) {
-                          super(props);
-                          this.state = {favoritecolor: "red"};
-                        }
-                        static getDerivedStateFromProps(props, state) {
-                          return {favoritecolor: props.favcol };
-                        }
-                        render() {
-                          return (
-                            &lth1>My Favorite Color is {this.state.favoritecolor}</h1>
-                          );
-                        }
-                      }
-                      
-                      ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
-                    </code>
-                  </pre>
+ <pre>
+   <code>
+     class Header extends React.Component {
+       constructor(props) {
+         super(props);
+         this.state = {favoritecolor: "red"};
+       }
+       static getDerivedStateFromProps(state) {
+         return {favoritecolor: props.favcol };
+       }
+       render() {
+         return (
+           &lth1>My Favorite Color 
+           isstate.favoritecolor}&lt/h1>
+         );
+       }
+     }
+     
+     ReactDOM.render(&ltHeader favcol="yellow/>, 
+     document.getElementById('root'));
+   </code>
+ </pre>
                 </div>
                 <p>The render() method is required, and is the method that actually outputs the HTML to the DOM.</p>
                 <div class="example">
                   <h4>Example</h4>
                   <p>A simple component with a simple render() metho:d</p>
-                  <pre>
-                    <code>
-                   class Headerextends 
-                   React
-                   component {
-                       render() {
-                         return (
-                           &lth1>This is the content of the Header component&lt/h1>
-                         );
-                       }
-                      
-                      
-                      ReactDOM.render(&ltHeader />,
-                       document.getElementById('root'));
-                      
-                      
-                    </code>
-                  </pre>
+  <pre>
+    <code>
+   class Headerextends 
+   React
+   component {
+       render() {
+         return (
+           &lth1>This is the content
+            of the Header component&lt/h1>
+         );
+       }
+      
+      
+      ReactDOM.render(&ltHeader />,
+       document.getElementById('root'));
+      
+      
+    </code>
+  </pre>
                 </div>
                 <p>The componentDidMount() method is called after the component is rendered.
 
@@ -745,31 +733,31 @@ The constructor function is also where you honor the inheritance of the parent c
                   <div class="example">
                     <h4>Example:</h4>
                     <p>At first favourite color is red, but give me a second, and it is yellow instead:</p>
-                    <pre>
-                      <code>
-                        class Header extends React.Component {
-                          constructor(props) {
-                            super(props);
-                            this.state = {favoritecolor: "red"};
-                          }
-                          componentDidMount() {
-                            setTimeout(() => {
-                              this.setState({favoritecolor: "yellow"})
-                            }, 1000)
-                          }
-                          render() {
-                            return (
-                              &lth1>My Favorite Color
-                               is
-                                {this.state.favoritecolor}&lt/h1>
-                            );
-                          }
-                        }
-                        
-                        ReactDOM.render(&ltHeader />,
-                         document.getElementById('root'));
-                      </code>
-                    </pre>
+<pre>
+  <code>
+    class Header extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {favoritecolor: "red"};
+      }
+      componentDidMount() {
+        setTimeout(() => {
+          this.setState({favor"yellow"})
+        }, 1000)
+      }
+      render() {
+        return (
+          &lth1>My Favorite Color
+           is
+            {this.state.favoriteh1>
+        );
+      }
+    }
+    
+    ReactDOM.render(&ltHeader />,
+     document.getElementById('root'));
+  </code>
+</pre>
                   </div>
         </article>
       </section>
@@ -790,32 +778,33 @@ onClick={shoot}  instead of onClick="shoot()".
             </p>
             <div class="example">
               <h4>React:</h4>
-              <pre>
-                <code>
-                  &ltbutton onClick={shoot}>Take the Shot!&lt/button>
-                </code>
-              </pre>
+<pre>
+  <code>
+    &ltbutton onClick={shoot}>Take the Shbutton>
+  </code>
+</pre>
             </div>
             <p>A good practice is to put the event handler as a method in the component class:</p>
             <div class="example">
               <p>Put the shoot function inside the Football component:</p>
-              <pre>
-                <code>
-                  class Football extends React.Component {
-                    shoot() {
-                      alert("Great Shot!");
-                    }
-                    render() {
-                      return (
-                        &ltbutton onClick={this.shoot}>Take the shot!&lt/button>
-                      );
-                    }
-                  }
-                  
-                  ReactDOM.render(&ltFootball />,
-                   document.getElementById('root'));
-                </code>
-              </pre>
+  <pre>
+    <code>
+      class Football extends React.Component {
+        shoot() {
+          alert("Great Shot!");
+        }
+        render() {
+          return (
+            &ltbutton onClick={this.shoot}>
+            Takshot!&lt/button>
+          );
+        }
+      }
+      
+      ReactDOM.render(&ltFootball />,
+       document.getElementById('root'));
+    </code>
+  </pre>
             </div>
         </article>
       </section>
@@ -823,7 +812,7 @@ onClick={shoot}  instead of onClick="shoot()".
         <header>Reference</header>
         <ul>
           <li>
-            All documentaion in this page are taken form <a href="https://www.w3schools.com/react/" target="_blank" >w3schools</a>
+            All documentaion in this page are taken form <a href="https://www.w3schools.com/react/" target="_blank" >w3cschools</a>
           </li>
         </ul>
       </section>

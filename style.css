@@ -81,8 +81,7 @@ header {
   padding: 1rem;
   background-color: rgb(219, 218, 217);
   border-left: 6px solid #d67f2e;
-  box-shadow: 2px 2px 9px #0e3114;
-  border-radius: 0.34rem;
+  box-shadow: 2px 2px 9px #0e3114;border-radius: 0.34rem;
 }
 article {
   background-color: #cedbce;
@@ -132,5 +131,6 @@ margin: 1.5rem 0;
   }
   #main-docs {
     width: 100%;
+    
   }
 }
