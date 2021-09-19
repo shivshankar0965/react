@@ -8,54 +8,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-    <nav id="nav-bar">
-      <div id="logo"> <span>React</span> Tutorial</div>
+    <nav id="navbar">
+      <header id="logo"> <span>React</span> Tutorial</header>
       <ul>
         <li>
-          <a href="#react-introduction" class="list-link"> React Intro</a>
+          <a href="#react_introduction" class="nav-link"> React Introduction</a>
         </li>
         <li>
-          <a href="#react-getstarted" class="list-link"> React Get Started</a>
+          <a href="#react_get_started" class="nav-link"> React Get Started</a>
         </li>
         <li>
-          <a href="#react-ES6" class="list-link"> React ES6</a>
+          <a href="#react_es6" class="nav-link"> React ES6</a>
         </li>
         <li>
-          <a href="#react-render" class="list-link"> React Render HTML</a>
+          <a href="#react_render_html" class="nav-link"> React Render HTML</a>
         </li>
         <li>
-          <a href="#react-jsx" class="list-link"> React JSX</a>
+          <a href="#react_jsx" class="nav-link"> React JSX</a>
         </li>
         <li>
-          <a href="#react-components" class="list-link"> React Components</a>
+          <a href="#react_components" class="nav-link"> React Components</a>
         </li>
         <li>
-          <a href="#react-props" class="list-link"> React Props</a>
+          <a href="#react_props" class="nav-link"> React Props</a>
         </li>
         <li>
-          <a href="#react-state" class="list-link"> React State</a>
+          <a href="#react_state" class="nav-link"> React State</a>
         </li>
         <li>
-          <a href="#react-lifecycle" class="list-link"> React Lifecycle</a>
+          <a href="#react_lifecycle" class="nav-link"> React Lifecycle</a>
         </li>
         <li>
-          <a href="#react-events" class="list-link"> React Events</a>
+          <a href="#react_events" class="nav-link"> React Events</a>
         </li>
         <li>
-          <a href="#react-form" class="list-link"> React Forms</a>
-        </li>
-        <li>
-          <a href="#react-CSS" class="list-link"> React CSS</a>
-        </li>
-        <li>
-          <a href="#react-sass" class="list-link"> React Sass</a>
+          <a href="#reference" class="nav-link"> Reference</a>
         </li>
       </ul>
     </nav>
-    <main id="main-docs">
-      <section class="main-section" id="react-introduction">
-        <header>React Introction</header>
+    <main id="main-doc">
+      <section class="main-section" id="react_introduction">
+        <header>React Introduction</header>
         <article>
           <p>
             React is a JavaScript library created by Facebook. React is a tool
@@ -64,14 +57,14 @@
           <p>
             Instead of manipulating the browser's DOM directly, React creates a
             virtual DOM in memory, where it does all the necessary manipulating,
-            before making the changes in the browser DOM. React finds out what
-            changes have been made, and changes only what needs to be changed.
+            before making the changes in the browser DOM. 
+           <p>React finds out what changes have been made, and changes only what needs to be changed.</p>
             You will learn the various aspects of how React does this in the
             rest of this tutorial.
           </p>
-          <p>
-             <h4>React.js History</h4>
-             <ul id="history">
+          
+             <h5>React.js History</h5>
+             <ul>
                  <li>Current version of React.JS is V16.8.6 (March 2019).</li>
                  <li>Initial Release to the Public (V0.3.0) was in July 2013.</li>
                  <li>React.JS was first used in 2011 for Facebook's Newsfeed feature.</li>
@@ -82,92 +75,90 @@
                 </li>
 
              </ul> 
-          </p>
+         
         </article>
       </section>
-      <section class="main-section" id="react-getstarted">
-          <header>React Getting Started</header>
+      <section class="main-section" id="react_get_started">
+          <header>React Get Started</header>
           <article>
               <p>
-                To get an overview of what React is, you can write React code directly in HTML.
-
+                To get an overview of what React is, you can write React code directly in HTML.</p>
+                <p>
                 But in order to use React in production, you need NPM and Node.js installed.
               </p>
               <p>
-                The quickest way start learning React is to write React directly in your HTML files.
+                The quickest way start learning React is to write React directly in your HTML files.</p>
 
+                <p>
                 Start by including three scripts, the first two let us write React code in our JavaScripts, and the third, Babel, allows us to write JSX syntax and ES6 in older browsers.
               </p>
-              <h4 class="example">Example</h4>
-<pre>
-<code>
-      class Hello extends React.Component {
-          render() {
-            return Hello World!
-          }
-        }
+              <h5>Example</h5>
+                  <code>
+                        class Hello extends React.Component {
+                            render() {
+                              return Hello World!
+                            }
+                          }
+                    
+                          ReactDOM.render(&ltHello />, document.getElementById('mydiv'))
+                  </code>
   
-        ReactDOM.render(<Hello />, document.getElementById('mydiv'))
-</code>
-  </pre>
                 <p>This way of using React can be OK for testing purposes, but for production you will need to set up a React environment.</p>
                 <p>If you have NPM and Node.js installed, you can create a React application by first installing the create-react-app.</p>
                 <p>Install create-react-app by running this command in your terminal:</p>
-<pre>
-<code>
-    C:\Users\Your Name>npm 
-    install -g create-react-app
-</code></pre>
-                <p>hen you are able to create a React application, let's create one called myfirstreact.
-
+                        <code>
+                            C:\Users\Your Name>npm 
+                            install -g create-react-app
+                        </code>
+                <p>hen you are able to create a React application, let's create one called myfirstreact.</p>
+                        `<p>
                     Run this command to create a React application named myfirstreact:</p>
-  <pre>
-      <code>
-          C:\Users\Your Name>npx 
-          create-react-app myfirstreact
-      </code>
-  </pre>
+
+                    <code>
+                        C:\Users\Your Name>npx 
+                        create-react-app myfirstreact
+                    </code>
+  
                     <p>The create-react-app will set up everything you need to run a React application.</p>
                     <p>
                         Now you are ready to run your first real React application! Run this command to move to the myfirstreact directory:
                     </p>
-   <pre>
-       <code>
-           C:\Users\Your Name\myfirstrstart
-       </code>
-   </pre>
+  
+                      <code>
+                          C:\Users\Your Name\myfirstrstart
+                      </code>
+   
                     <p>A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.</p>
           </article>
       </section>
-      <section class="main-section" id="react-ES6">
-          
-              <header> React ES6</header>
+      <section class="main-section" id="react_es6">
+              <header>React ES6</header>
               <article>
               <p>ES6 stands for ECMAScript 6.</p>
               <P>ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in 2015, and is also known as ECMAScript 2015.</P>
               <p>React uses ES6, and you should be familiar with some of the new features like:</p>
-              <ul id="es6-features">
+              <ul>
                   <li>Classes</li>
                   <li>Arrow Functions</li>
                   <li>Variables(let, const, var)</li>
               </ul>
               <p>A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.</p>
-              <div class="example">
-                  <h4>Example:</h4>
-      <pre>
-          <code>
-            class Car {
-                constructor(name) {
-                  this.brand = name;
-                }
-              }
-          </code>
-      </pre>
-                </div>
+              
+                  <h5>Example:</h5>
+    
+                    <code>
+                      class Car {
+                          constructor(name) {
+                            this.brand = name;
+                          }
+                        }
+                    </code>
+      
+                
                 <p>Now you can create objects using the Car class:</p>
-                <div class="example">
-                    <h4>Example</h4>
-        <pre>
+                
+                    <h5>Example</h5>
+      
             <code>
                 class Car {
                 constructor(name) {
@@ -177,13 +168,9 @@
                   
                 mycar = new Car("Ford"); 
             </code>
-        </pre>
-                </div>
-              
           </article>
       </section>
-      <section class="main-section" id="react-render">
-          
+      <section class="main-section" id="react_render_html">
           <header>React Render HTML</header>
           <article>
           <P>React's goal is in many ways to render HTML in a web page.
@@ -192,31 +179,31 @@
             <P>The ReactDOM.render() function takes two arguments, HTML code and an HTML element.
 
                 The purpose of the function is to display the specified HTML code inside the specified HTML element.</P>
-                <div class="example">
-                    <h4>Example</h4>
+                
+                    <h5>Example</h5>
                     <p>Display a paragraph inside the "root" element:</p>
-                    <pre>
+                  
                         <code>
      ReactDOM.render(&ltp&gtHellolt/p&gt,
       documentgetElementById('root'));
                         </code>
-                    </pre>
+                    
                     <p>The result is displayed in the div having id as root element:</p>
-      <pre>
+    
         <code>
           &ltbody&gt
           &ltdiv id="root" &gt&lt/div&gt
           &lt/body&gt
         </code>
-      </pre>
-                </div>
+      
+                
                 <p>
                     The HTML code in this tutorial uses JSX which allows you to write HTML tags inside the JavaScript code:
                 </p>
-                <div class="example">
-                    <h4>Example</h4>
+                
+                    <h5>Example</h5>
                     <p>Create a variable that contains HTML code and dispaly it in the root node:</p>
-      <pre>
+    
           <code>
               const myelement = (
               &lttable&lgt
@@ -234,12 +221,11 @@
 ReactDOM.render(myelement,
  document.getElementById('root'));
                         </code>
-                    </pre>
-                </div>
+                    
+                
             </article>
       </section>
-      <section class="main-section" id="react-jsx">
-          
+      <section class="main-section" id="react_jsx">
           <header>React JSX</header>
           <article>
           <p>JSX stands for JavaScript XML.
@@ -257,20 +243,20 @@ ReactDOM.render(myelement,
               
               Let us demonstrate with two examples, the first uses JSX and the second does not:</p>
        
-        <div class="example">
-          <h4>Example 1</h4>
+        
+          <h5>Example 1</h5>
           <p>JSX:</p>
-        <pre>
+      
           <code>const myelement = &lth1>I Love JSX!</h1>;
 ReactDOM.render(myelement, 
 dogetElementById('root'));
           </code>
-        </pre>
-        </div>
-        <div class="example">
-          <h4>Example 2</h4>
+        
+        
+        
+          <h5>Example 2</h5>
           <p>Without JSX:</p>
-        <pre>
+      
           <code>
   const myelement = React.createElement('h1',
    ,do not use JSX!');
@@ -278,26 +264,26 @@ dogetElementById('root'));
           ReactDOM.render(myelement, 
           documengetElementById('root'));
           </code>
-        </pre>
-        </div>
-        <p>With JSX you can write expressions inside curly braces { }.
+        
+        
+        <p>With JSX you can write sions inside curly braces { }.
 
-          The expression can be a React variable, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result:</p>
-          <div class="example">
-            <h4>Example</h4> 
-            <p>Exedute the expression 5 + 5 :</p>
- <pre>
+          The sion can be a React variable, or property, or any other valid JavaScript sion. JSX will execute the sion and return the result:</p>
+          
+            <h5>Example</h5> 
+            <p>Exedute the sion 5 + 5 :</p>
+
    <code>
      const myelement = h1>React 
       is {5 + 5} times better with JSX</h1>;
    </code>
- </pre>
-          </div>
+ 
+          
           <p>To write HTML on multiple lines, put the HTML inside parentheses:</p>
-          <div class="example">
-            <h4>Example</h4>
-            <p>Create a list with three list items :</p>
-            <pre>
+          
+            <h5>Example</h5>
+            <p>Create a nav with three nav items :</p>
+          
               <code>
                 const myelement = (
                 &ltul>
@@ -307,13 +293,13 @@ dogetElementById('root'));
                 &lt/ul>
             );
               </code>
-            </pre>
-          </div>
+            
+          
         </article>
       </section>
-      <section class="main-section" id="react-components">
-        
-          <header>React Components</header><article>
+      <section class="main-section" id="react_components">
+        <header>React Components</header>
+          <article>
           <p>Components are like functions that return HTML elements.</p>
           <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML via a render() function.
 
@@ -323,10 +309,10 @@ dogetElementById('root'));
               The component has to include the extends React.Component statement, this statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
               
               The component also requires a render() method, this method returns HTML.</p>
-              <div class="example">
-               <h4>Example</h4>
+              
+               <h5>Example</h5>
                <p>Create a Classs component called Car</p>
-    <pre>
+  
       <code>
        class Car extends React.Component {
          render() {
@@ -334,63 +320,63 @@ dogetElementById('root'));
          }
        }
       </code>
-    </pre>
-              </div>
+    
+              
               <p>Now your React application has a component called Car, which returns a &lth2> element.
 
                 To use this component in your application, use similar syntax as normal HTML: &ltCar /></p>
-                <div class="example">
-                  <h4>Example</h4>
+                
+                  <h5>Example</h5>
                   <p>Display the Car component in the "root" element :</p>
-    <pre>
+  
       <code>
         ReactDOM.render(&ltCar />, 
         dogetElementById('root'));
       </code>
-    </pre>
-                </div>
+    
+                
                 <p>Here is the same example as above, but created using a Function component instead.
 
-                  A Function component also returns HTML, and behaves pretty much the same way as a Class component, but Class components have some additions, and will be preferred in this tutorial.</p>
-                  <div class="example">
-                    <h4>Example</h4>
+                  A Function component also returns HTML, and behavety much the same way as a Class component, but Class components have some additions, and will berred in this tutorial.</p>
+                  
+                    <h5>Example</h5>
                     <p>Create a Fuction component called Car</p>
-        <pre>
+      
           <code>
             function Car() {
               return &lth2>Hi, I am also altdot;/h2>;
             }
           </code>
-        </pre>
-                  </div>
+        
+                  
                   <p>Once again your React application has a Car component.
 
                     Refer to the Car component as normal HTML (except in React, components must start with an upper case letter):</p>
-                    <div class="example">
-                      <h4>Example</h4>
+                    
+                      <h5>Example</h5>
                       <p>Display the Car component in the "root" element:</p>
-       <pre>
+      
          <code>
            ReactDOM.render(&ltCar />,
             dgetElementById('root'));
          </code>
-       </pre>
-                    </div>
+       
+                    
                     <p>
                       If there is a constructor() function in your component, this function will be called when the component gets initiated.
+<p>
+The constructor function is where you initiate the component's properties.</p>
 
-The constructor function is where you initiate the component's properties.
+<p> In React, component properties should be kept in an object called state.</p>
 
-In React, component properties should be kept in an object called state.
-
-You will learn more about state later in this tutorial.
-
+<p> You will learn more about state later in this tutorial.</p>
+<p>
 The constructor function is also where you honor the inheritance of the parent component by including the super() statement, which executes the parent component's constructor function, and your component has access to all the functions of the parent component (React.Component).
                     </p>
-                    <div class="example">
-                      <h4>Example</h4>
+                    
+                      <h5>Example</h5>
                       <p>Create a counstructio function in the Car component, and add a color property: </p>
-     <pre>
+    
        <code>
          class Car extends React.Component {
            constructor() {
@@ -402,13 +388,13 @@ The constructor function is also where you honor the inheritance of the parent c
            }
          }
        </code>
-     </pre>
-                    </div>
+     
+                    
         </article>
       </section>
-      <section class="main-section" id="react-props">
-        
-          <header>React Props </header><article>
+      <section class="main-section" id="react_props">
+        <header>React Props </header>
+          <article>
           <p>Props are arguments passed into React components.
 
             Props are passed to components via HTML attributes.
@@ -417,19 +403,18 @@ The constructor function is also where you honor the inheritance of the parent c
             <p>React Props are like function arguments in JavaScript and attributes in HTML.
 
               To send props into a component, use the same syntax as HTML attributes:</p>
-              <div class="example">
-                <h4>Example</h4>
+              
+                <h5>Example</h5>
                 <p>Add a "brand" attribute to the Car element</p>
-  <pre>
+
     <code>
       const myelement = &ltCar brand="Ford" />;
     </code>
-  </pre>
-              </div>
+  
+              
               <p>The component receives the argument as a props object:</p>
-              <div class="example">
-                <h4>Example</h4>
-<pre>
+              
+                <h5>Example</h5>
   <code>
     class Car extends React.Component {
       render() {
@@ -437,13 +422,13 @@ The constructor function is also where you honor the inheritance of the parent c
       }
     }
   </code>
-</pre>
-            </div>
+
+            
             <p>Props are also how you pass data from one component to another, as parameters.</p>
-            <div class="example">
-              <h4>Example</h4>
+            
+              <h5>Example</h5>
               <p>Send the "brand" property from the Garage component to the Car component:</p>
-              <pre>
+            
                 <code>
       class Car extends React.Component {
         render() {
@@ -466,14 +451,14 @@ The constructor function is also where you honor the inheritance of the parent c
           document.getElementById('root'));
                 </code>
 
-              </pre>
+              
 
-            </div>
+            
             <p>If you have a variable to send, and not a string as in the example above, you just put the variable name inside curly brackets:</p>
-            <div class="example">
-              <h4>Example</h4>
+            
+              <h5>Example</h5>
               <p>Create a variable named "carname" and send it to the Car component</p>
-  <pre>  
+  
     <code>        
       class Car extends React.Component {
         render() {
@@ -496,44 +481,43 @@ The constructor function is also where you honor the inheritance of the parent c
       ReactDOM.render(&ltGarage />,
        document.getElementById('root'));
     </code>
-  </pre>
-            </div>
+  
+            
             <p>If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.</p>
-            <div class="example">
-              <h4>Example</h4>
-<pre>
-  <code>
-    class Car extends React.Component {
-      constructor(props) {
-        super(props);
-      }
-      render() {
-        return &lth2>I am a {this.props.mlth2>;
-      }
-    }
-    
-    ReactDOM.render(&ltCar model="Mustang"/>, 
-    
-    document.getElementById('root'));
-  </code>
-</pre>
-            </div>
+            
+              <h5>Example</h5>
+                    <code>
+                      class Car extends React.Component {
+                        constructor(props) {
+                          super(props);
+                        }
+                        render() {
+                          return &lth2>I am a {this.props.mlth2>;
+                        }
+                      }
+                      
+                      ReactDOM.render(&ltCar model="Mustang"/>, 
+                      
+                      document.getElementById('root'));
+                    </code>
+
+            
         </article>
 
       </section>
-      <section class="main-section" id="react-state">
-        
-          <header>React State</header><article>
+      <section class="main-section" id="react_state">
+          <header>React State</header>
+          <article>
           <p>React components has a built-in state object.
-
-            The state object is where you store property values that belongs to the component.
-            
+            <p>
+             The state object is where you store property values that belongs to the component.
+            </p>
             When the state object changes, the component re-renders.</p>
             <p>The state object is initialized in the constructor:</p>
-            <div class="example">
-              <h4>Example</h4>
+            
+              <h5>Example</h5>
               <p>Specify the state object in the constructor method:</p>
-    <pre>
+  
       <code>
         class Car extends React.Component {
           constructor(props) {
@@ -549,13 +533,13 @@ The constructor function is also where you honor the inheritance of the parent c
           }
         }
       </code>
-    </pre>
-            </div>
-            <p>The <span>state</span> object can contain as many properties as you like:</p>
-            <div class="example">
-              <h4>Example</h4>
+    
+            
+            <p>The object can contain as many properties as you like:</p>
+            
+              <h5>Example</h5>
               <p>Specity all the properties your component need:</p>
-  <pre>
+
     <code>
       class Car extends React.Component {
         constructor(props) {
@@ -576,13 +560,12 @@ The constructor function is also where you honor the inheritance of the parent c
         }
       }
     </code>
-  </pre>
-            </div>
+  
+            
             <p>Refer to the <span>state</span> object anywhere in the component by using the this.state.propertyname syntax:</p>
-            <div class="example">
-              <h4>Example</h4>
+            
+              <h5>Example</h5>
               <p>Refer to the state object in the render() method</p>
-<pre>
   <code>
     class Car extends React.Component {
       constructor(props) {
@@ -608,15 +591,14 @@ The constructor function is also where you honor the inheritance of the parent c
       }
     }
   </code>
-</pre>
-            </div>
+
+            
             <p>To change a value in the state object, use the this.setState() method.
 
               When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value(s).</p>
-              <div class="example">
-                <h4>Example:</h4>
+              
+                <h5>Example:</h5>
                 <p>Add a button with an onClick event that will change the color property:</p>
-<pre>
   <code>
     class Car extends React.Component {
       constructor(props) {
@@ -649,15 +631,15 @@ The constructor function is also where you honor the inheritance of the parent c
       }
     }
   </code>
-</pre>
-              </div>
+
+              
         </article>
 
       </section>
-      <section class="main-section" id="react-lifecycle">
+      <section class="main-section" id="react_lifecycle">
         <header>React Lifecycle</header>
         <article>
-          <p>ach component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+          <p>each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
 
             The three phases are: Mounting, Updating, and Unmounting</p>
             <p>Mounting means putting elements into the DOM.</p>
@@ -669,13 +651,13 @@ The constructor function is also where you honor the inheritance of the parent c
               <li>componentDidMount()</li>
             </ol>
             <p>The render() method is required and will always be called, the others are optional and will be called if you define them.</p>
-            <p>The constructor() method is called before anything else, when the component is initiated, and it is the natural place to set up the initial state and other initial values.
-
-              The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).</p>
-              <div class="example">
-                <h4>Example:</h4>
+            <p>The constructor() method is called before anything else, when the component is initiated, and it is the natural place to set up the initial state and other initial values. </p>
+              <p>
+              The constructor() method is called with the props, as arguments, and you should always start by calling the super(props) before anything else, this will initiate the parent's constructor method and allows the component to inherit methods from its parent (React.Component).
+            </p>
+              
+                <h5>Example:</h5>
                 <p>The constructor method is called, by React, every time you make a component:</p>
-<pre>
   <code>
     class Header extends React.Component {
       constructor(props) {
@@ -693,8 +675,8 @@ The constructor function is also where you honor the inheritance of the parent c
     ReactDOM.render( &ltHeader />,
      document.getElementById('root'));
   </code>
-</pre>
-              </div>
+
+              
               <p>The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
 
                 This is the natural place to set the state object based on the initial props.
@@ -702,37 +684,37 @@ The constructor function is also where you honor the inheritance of the parent c
                 It takes state as an argument, and returns an object with changes to the state.
                 
                 The example below starts with the favorite color being "red", but the getDerivedStateFromProps() method updates the favorite color based on the favcol attribute:</p>
-                <div class="example">
-                  <h4>Example:</h4>
+                
+                  <h5>Example:</h5>
                   <p>The getDeriverStateFromProps method is called right before the render method:</p>
- <pre>
-   <code>
-     class Header extends React.Component {
-       constructor(props) {
-         super(props);
-         this.state = {favoritecolor: "red"};
-       }
-       static getDerivedStateFromProps(state) {
-         return {favoritecolor: props.favcol };
-       }
-       render() {
-         return (
-           &lth1>My Favorite Color 
-           isstate.favoritecolor}&lt/h1>
-         );
-       }
+ 
+ <code>
+   class Header extends React.Component {
+     constructor(props) {
+       super(props);
+       this.state = {favoritecolor: "red"};
      }
-     
-     ReactDOM.render(&ltHeader favcol="yellow/>, 
-     document.getElementById('root'));
-   </code>
- </pre>
-                </div>
+     static getDerivedStateFromProps(state) {
+       return {favoritecolor: props.favcol };
+     }
+     render() {
+       return (
+         &lth1>My Favorite Color 
+         isstate.favoritecolor}&lt/h1>
+       );
+     }
+   }
+   
+   ReactDOM.render(&ltHeader favcol="yellow/>, 
+   document.getElementById('root'));
+ </code>
+ 
+                
                 <p>The render() method is required, and is the method that actually outputs the HTML to the DOM.</p>
-                <div class="example">
-                  <h4>Example</h4>
+                
+                  <h5>Example</h5>
                   <p>A simple component with a simple render() metho:d</p>
-  <pre>
+
     <code>
    class Headerextends 
    React
@@ -750,15 +732,14 @@ The constructor function is also where you honor the inheritance of the parent c
       
       
     </code>
-  </pre>
-                </div>
+  
+                
                 <p>The componentDidMount() method is called after the component is rendered.
 
                   This is where you run statements that requires that the component is already placed in the DOM.</p>
-                  <div class="example">
-                    <h4>Example:</h4>
+                  
+                    <h5>Example:</h5>
                     <p>At first favourite color is red, but give me a second, and it is yellow instead:</p>
-<pre>
   <code>
     class Header extends React.Component {
       constructor(props) {
@@ -782,11 +763,11 @@ The constructor function is also where you honor the inheritance of the parent c
     ReactDOM.render(&ltHeader />,
      document.getElementById('root'));
   </code>
-</pre>
-                  </div>
+
+                  
         </article>
       </section>
-      <section class="main-section" id="react-events">
+      <section class="main-section" id="react_events">
         <header>React Events</header>
         <article>
           <p>Just like HTML, React can perform actions based on user events.
@@ -801,18 +782,17 @@ React event handlers are written inside curly braces:
 
 onClick={shoot}  instead of onClick="shoot()".
             </p>
-            <div class="example">
-              <h4>React:</h4>
-<pre>
+            
+              <h5>React:</h5>
   <code>
     &ltbutton onClick={shoot}>Take the Shbutton>
   </code>
-</pre>
-            </div>
+
+            
             <p>A good practice is to put the event handler as a method in the component class:</p>
-            <div class="example">
+            
               <p>Put the shoot function inside the Football component:</p>
-  <pre>
+
     <code>
       class Football extends React.Component {
         shoot() {
@@ -829,8 +809,8 @@ onClick={shoot}  instead of onClick="shoot()".
       ReactDOM.render(&ltFootball />,
        document.getElementById('root'));
     </code>
-  </pre>
-            </div>
+  
+            
         </article>
       </section>
       <section class="main-section" id="reference">
@@ -842,6 +822,7 @@ onClick={shoot}  instead of onClick="shoot()".
         </ul>
       </section>
     </main>
-  </div>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
