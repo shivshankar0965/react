@@ -11,12 +11,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+body {
   display: flex;
   line-height: 1.5;
+  transition: all 0.3s;
 }
 
-#nav-bar {
+#navbar {
   top: 0;
   height: 100vh;
   border-right: 3px solid rgb(135, 143, 140);
@@ -30,7 +31,7 @@
 nav {
   width: 30vw;
 }
-#main-docs {
+#main-doc {
   transition: all 0.5s;
   width: 70vw;
 
@@ -54,20 +55,20 @@ nav {
   top: 0;
   left: 0;
 }
-#nav-bar ul {
+#navbar ul {
   list-style-type: none;
 }
-#nav-bar li {
+#navbar li {
   font-size: 18px;
   background-color: rgb(186, 226, 195);
   border-top: 2px solid black;
 }
-#nav-bar li a:hover {
+#navbar li a:hover {
   background-color: #46a839;
   transition: 0.2s;
   color: white;
 }
-#nav-bar li a {
+#navbar li a {
   text-decoration: none;
   display: block;
   color: rgb(7, 22, 1);
@@ -75,7 +76,7 @@ nav {
   cursor: pointer;
   transition: all 0.5s;
 }
-header {
+section >header {
   font-size: 25px;
   margin: 1.2rem 0.9rem;
   padding: 1rem;
@@ -90,19 +91,16 @@ article {
   border-radius: 0.34rem;
 }
 code {
-  font-size: 12px;
-
+  font-size: 14px;
   font-family: "Source Code Pro";
+  width: 450px;
+  height: 280px;
+  color: white;
+  background-color: rgb(23, 22, 22);
+  display: block;
+  margin-left: 30px;
 }
-.example p {
-  font-size: 16px;
-}
-.example {
-margin: 1.5rem 0;
-}
-#history {
-    padding: 0 0 0 2rem;
-}
+
 #reference ul{
     list-style-type:disc;
     font-size: 18px;
@@ -114,22 +112,22 @@ margin: 1.5rem 0;
     color: rgb(230, 132, 34);
     font-weight: bold;
 }
-#es6-features{
-    margin-left: 2.5rem;
+section ul li{
+  margin-left:30px ;
 }
 @media (max-width: 750px) {
-  .container {
+ body {
     width: auto;
     display: inherit;
   }
-  #nav-bar {
+  #navbar {
     width: 100%;
     text-align: center;
     margin: inherit;
     overflow: auto;
     height: 40vh;
   }
-  #main-docs {
+  #main-doc {
     width: 100%;
     
   }
