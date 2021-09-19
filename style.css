@@ -131,4 +131,8 @@ section ul li{
     width: 100%;
     
   }
+  code{
+    width: 300px;
+    margin-left: 0;
+  }
 }
