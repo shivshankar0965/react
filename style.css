@@ -55,6 +55,9 @@ nav {
   top: 0;
   left: 0;
 }
+#navbar  a{
+  list-style-type:none;
+}
 #navbar ul {
   list-style-type: none;
 }
